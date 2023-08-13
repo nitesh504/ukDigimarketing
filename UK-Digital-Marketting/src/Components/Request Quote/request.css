@@ -1,0 +1,39 @@
+.Request{
+    text-align: center;
+    background-color: #ECF0F1;
+    padding: 5rem;
+}
+.Request h1{
+    color: #444444;
+    font-size: 3rem;
+}
+.Request h2{
+    color: #E84040;
+}
+.Request button{
+    border: 2px solid #B9001F;
+    border-radius: 2rem;
+    padding: 1rem 7rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.Request button:hover{
+    background-color: #B9001F;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+@media screen and (max-width: 600px) {
+    .Request{
+        padding: 2rem;
+    }
+    .Request h1{
+        font-size: 1.8rem;
+    }
+    .Request h2{
+        font-size: 1rem;
+        color: #E84040;
+    }
+    .Request button{
+        padding: 1rem 2rem;
+    }
+}

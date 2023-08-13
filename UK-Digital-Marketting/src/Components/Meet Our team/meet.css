@@ -1,0 +1,50 @@
+@media (min-width: 0px) and (max-width: 400px) {
+  .meet {
+    padding:  1.5rem 0 !important;
+    
+  }
+  
+  .team-member-info h3{
+    font-size: 0.9rem !important;
+  }
+  .team-member-info p{
+    font-size: 0.9rem !important;
+  }
+}
+.Meet {
+  text-align: center;
+  padding-top: 1rem;
+  overflow: hidden;
+}
+.meet img {
+  width: 100%;
+  margin: auto;
+  height: 350px;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  object-fit: cover;
+  
+}
+.meet {
+  padding: 2rem;
+  text-align: center;
+}
+.center-card {
+  border-bottom: 2px solid #c8102e;
+  width: 90% !important;
+  box-shadow: 0 0 8px rgb(144, 144, 144);
+  border-radius: 7px;
+  overflow: hidden;
+  padding-bottom: 0.5rem;
+  height: 100%;
+}
+.Meet > h1::before {
+  color: #c8102e;
+  content: "";
+  position: absolute;
+  margin-left: -10px;
+  height: 30px;
+  margin-top: 3px;
+  width: 4px;
+  background-color: #b9001f;
+}
