@@ -28,12 +28,12 @@ const Ecommerce= () => {
           £ <span>500/month</span>
           </h1>
           <ul>
-            <li>Responsive design with up to 5 pages</li>
-            <li>HTML/CSS/JavaScript development</li>
-            <li>Basic CMS integration (e.g., WordPress)</li>
-            <li>Basic mobile optimization</li>
-            <li>Basic contact form setup</li>
-            <li>Basic on-page SEO setup</li>
+            <li>Up to 20 products listed and optimized</li>
+            <li>Basic order management and fulfillment</li>
+            <li>Basic customer inquiries and support</li>
+            <li>Basic SEO for product pages</li>
+            <li>1 marketing campaign per month</li>
+            <li>Basic performance summary and insights</li>
           </ul>
           <button>Get Started</button>
         </div>
@@ -53,12 +53,12 @@ const Ecommerce= () => {
           £ <span>1000/month</span>
           </h1>
           <ul>
-            <li>Unique and modern design with up to 10 pages</li>
-            <li>Interactive elements and animations</li>
-            <li>CMS setup and content population</li>
-            <li>Enhanced mobile user experience</li>
-            <li>Customized contact forms and features</li>
-            <li>Comprehensive on-page SEO optimization</li>
+            <li>Up to 50 products listed and optimized</li>
+            <li>Streamlined order processing and fulfillment</li>
+            <li>Enhanced customer support and issue resolution</li>
+            <li>Advanced SEO for improved organic visibility</li>
+            <li>2 marketing campaigns per month</li>
+            <li>In-depth analytics and growth analysis</li>
           </ul>
           <button>Get Started</button>
         </div>
@@ -78,12 +78,12 @@ const Ecommerce= () => {
           £ <span>1500/month</span>
           </h1>
           <ul>
-            <li>Bespoke and captivating design with up to 15 pages</li>
-            <li>Advanced front-end features and effects</li>
-            <li>Custom CMS integration and training</li>
-            <li>Optimized for all devices and screen sizes</li>
-            <li>Advanced form functionalities and validation</li>
-            <li>Advanced SEO strategies and site structure</li>
+            <li>Up to 100 products listed and optimized</li>
+            <li>Advanced fulfillment strategy and logistics</li>
+            <li>Priority support and customer retention</li>
+            <li>Comprehensive SEO strategy and competitor analysis</li>
+            <li>Customized campaigns and promotions</li>
+            <li>Customized reporting and strategy updates</li>
           </ul>
           <button>Get Started</button>
           <img

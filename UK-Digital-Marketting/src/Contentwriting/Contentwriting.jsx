@@ -33,7 +33,7 @@ const Contentwriting = () => {
             <li>Basic on-page SEO for content</li>
             <li>5 social media posts per month</li>
             <li>Basic proofreading and grammar check</li>
-            <li></li>
+
           </ul>
           <button>Get Started</button>
         </div>
@@ -53,12 +53,12 @@ const Contentwriting = () => {
           £ <span>1000/month</span>
           </h1>
           <ul>
-            <li>Advanced Facebook ad targeting and optimization</li>
-            <li>Engaging ad copy with A/B testing</li>
-            <li>Setup of 4 social media accounts</li>
-            <li>Bi-weekly in-depth performance and ROI analysis</li>
-            <li>10 custom graphics/posts per month</li>
-            <li>Engaging with audience and fostering community</li>
+            <li>4 blog posts per month</li>
+            <li>Enhanced content for up to 10 pages</li>
+            <li>Advanced on-page SEO and keyword research</li>
+            <li>10 social media posts per month</li>
+            <li>1 press release per month</li>
+            <li>In-depth editing and content enhancements</li>
           </ul>
           <button>Get Started</button>
         </div>
@@ -78,12 +78,12 @@ const Contentwriting = () => {
           £ <span>1500/month</span>
           </h1>
           <ul>
-            <li>Complete brand identity package</li>
-            <li>Comprehensive stationery suite with multiple options</li>
-            <li>20 custom social media graphics</li>
-            <li>10 website banners with various sizes</li>
-            <li>Comprehensive marketing material design</li>
-            <li>Detailed brand guidelines with color and font specifications</li>
+            <li>6 blog posts per month</li>
+            <li>Comprehensive content for up to 15 pages</li>
+            <li>SEO-friendly content strategy and optimization</li>
+            <li>15 social media posts per month</li>
+            <li>2 press releases per month</li>
+            <li>Customized editing and style consistency</li>
           </ul>
           <button>Get Started</button>
           <img

@@ -28,12 +28,12 @@ const Videoediting = () => {
           £ <span>500/month</span>
           </h1>
           <ul>
-            <li>Responsive design with up to 5 pages</li>
+             <li>Editing of up to 2 minutes of raw footage</li>
             <li>HTML/CSS/JavaScript development</li>
-            <li>Basic CMS integration (e.g., WordPress)</li>
-            <li>Basic mobile optimization</li>
-            <li>Basic contact form setup</li>
-            <li>Basic on-page SEO setup</li>
+            <li>Basic audio editing and background music</li>
+            <li>Basic color correction and color grading</li>
+            <li>Basic text and simple graphics</li>
+            <li>Standard file formats and resolution</li>
           </ul>
           <button>Get Started</button>
         </div>
@@ -53,12 +53,12 @@ const Videoediting = () => {
           £ <span>1000/month</span>
           </h1>
           <ul>
-            <li>Unique and modern design with up to 10 pages</li>
-            <li>Interactive elements and animations</li>
-            <li>CMS setup and content population</li>
-            <li>Enhanced mobile user experience</li>
-            <li>Customized contact forms and features</li>
-            <li>Comprehensive on-page SEO optimization</li>
+            <li>Editing of up to 5 minutes of raw footage</li>
+            <li>Enhanced transitions and visual effects</li>
+            <li>Enhanced audio mixing and sound enhancement</li>
+            <li>Advanced color grading and visual enhancements</li>
+            <li>Enhanced text animations and graphic overlays</li>
+            <li>High-quality file formats and delivery</li>
           </ul>
           <button>Get Started</button>
         </div>
@@ -78,12 +78,12 @@ const Videoediting = () => {
           £ <span>1500/month</span>
           </h1>
           <ul>
-            <li>Bespoke and captivating design with up to 15 pages</li>
-            <li>Advanced front-end features and effects</li>
-            <li>Custom CMS integration and training</li>
-            <li>Optimized for all devices and screen sizes</li>
-            <li>Advanced form functionalities and validation</li>
-            <li>Advanced SEO strategies and site structure</li>
+            <li>Editing of up to 10 minutes of raw footage</li>
+            <li>Customized transitions and cinematic effects</li>
+            <li>Custom audio design and voiceovers</li>
+            <li>Customized color grading and visual style</li>
+            <li>Customized motion graphics and animations</li>
+            <li>Customized file formats and delivery options</li>
           </ul>
           <button>Get Started</button>
           <img

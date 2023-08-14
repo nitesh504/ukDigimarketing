@@ -28,10 +28,10 @@ const Socialmediainfluencer= () => {
           £ <span>500/month</span>
           </h1>
           <ul>
-            <li>Unique logo design with 2 revisions</li>
-            <li>Business card design with single revision</li>
-            <li>5 custom social media graphics</li>
-            <li>2 website banners with standard sizes</li>
+            <li>Basic identification of suitable influencers</li>
+            <li>Basic outreach and negotiation with influencers</li>
+            <li>Coordinating campaigns with influencers</li>
+            <li>Co-creating content with influencers</li>
             <li></li>
             <li></li>
           </ul>
@@ -53,12 +53,12 @@ const Socialmediainfluencer= () => {
           £ <span>1000/month</span>
           </h1>
           <ul>
-            <li>Advanced Facebook ad targeting and optimization</li>
-            <li>Engaging ad copy with A/B testing</li>
-            <li>Setup of 4 social media accounts</li>
-            <li>Bi-weekly in-depth performance and ROI analysis</li>
-            <li>10 custom graphics/posts per month</li>
-            <li>Engaging with audience and fostering community</li>
+            <li>In-depth research and evaluation of influencers</li>
+            <li>Professional influencer communication and negotiation</li>
+            <li>Comprehensive influencer campaign management</li>
+            <li>Professional content production and collaboration</li>
+            <li>In-depth tracking of influencer campaign ROI</li>
+            <li>Detailed influencer performance analysis</li>
           </ul>
           <button>Get Started</button>
         </div>
@@ -78,12 +78,12 @@ const Socialmediainfluencer= () => {
           £ <span>1500/month</span>
           </h1>
           <ul>
-            <li>Complete brand identity package</li>
-            <li>Comprehensive stationery suite with multiple options</li>
-            <li>20 custom social media graphics</li>
-            <li>10 website banners with various sizes</li>
-            <li>Comprehensive marketing material design</li>
-            <li>Detailed brand guidelines with color and font specifications</li>
+            <li>Customized selection based on brand fit and reach</li>
+            <li>Customized influencer partnerships and collaborations</li>
+            <li>End-to-end management of influencer collaborations</li>
+            <li>Custom content creation for influencer partnerships</li>
+            <li>Comprehensive analysis and optimization for results</li>
+            <li>Customized reporting and strategy updates</li>
           </ul>
           <button>Get Started</button>
           <img
