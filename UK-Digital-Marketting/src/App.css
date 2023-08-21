@@ -198,6 +198,7 @@
   padding: 0.7rem;
   width: 100%;
   margin-top: 1rem;
+  font-size: 0.9rem;
 }
 @media screen and (max-width: 600px) {
   .login-container {
