@@ -9,6 +9,8 @@ const Login = () => {
     contact: "",
     company: "",
     website: "",
+    service: "",
+    package: ""
   });
   function handleSubmit(e) {
     setData({ ...data, [e.target.name]: e.target.value });
@@ -18,7 +20,7 @@ const Login = () => {
     console.log(data);
     try {
       await axios.post(
-        "https://script.google.com/macros/s/AKfycbyXUGLNXVPZIAbRFmpE7N_daeMHWoMrkDKNjsxNYxdmia61EgFlLPU7t0ji6aARtUkd/exec?action=addUser3",
+        "https://script.google.com/macros/s/AKfycbwCUCn43aSpIKwagpnzXndUmXc_xEkw5o9luu74V2oLzeho5LP8dLzgWf6Rg7LPPVAn/exec?action=addUser4",
         data,
         {
           headers: {
@@ -89,6 +91,11 @@ const Login = () => {
             placeholder="Website*"
             onChange={(e) => handleSubmit(e)}
           />
+          <select name="" id="">
+            <option value="basic">Basic</option>
+            <option value="standard">Standard</option>
+            <option value="premium">Premium</option>
+          </select>
           <br />
           <input type="submit" name="" id="" value="Get Free Report" />
         </div>
