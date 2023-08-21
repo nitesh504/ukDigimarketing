@@ -28,12 +28,12 @@ const Payperclick= () => {
           £ <span>500/month</span>
           </h1>
           <ul>
-            <li>Responsive design with up to 5 pages</li>
-            <li>HTML/CSS/JavaScript development</li>
-            <li>Basic CMS integration (e.g., WordPress)</li>
-            <li>Basic mobile optimization</li>
-            <li>Basic contact form setup</li>
-            <li>Basic on-page SEO setup</li>
+            <li>Basic ad campaign setup and optimization</li>
+            <li>Basic keyword research and selection</li>
+            <li>Basic ad copy and creative development</li>
+            <li>Basic budget allocation and monitoring</li>
+            <li>Basic landing page review and recommendations</li>
+            <li>Basic performance summary and insights</li>
           </ul>
           <button>Get Started</button>
         </div>
@@ -53,12 +53,12 @@ const Payperclick= () => {
           £ <span>1000/month</span>
           </h1>
           <ul>
-            <li>Unique and modern design with up to 10 pages</li>
-            <li>Interactive elements and animations</li>
-            <li>CMS setup and content population</li>
-            <li>Enhanced mobile user experience</li>
-            <li>Customized contact forms and features</li>
-            <li>Comprehensive on-page SEO optimization</li>
+            <li>Customized campaign strategy and targeting</li>
+            <li>Advanced keyword analysis and targeting</li>
+            <li>Customized ad copy and A/B testing</li>
+            <li>Advanced budget optimization and tracking</li>
+            <li>A/B testing and landing page improvements</li>
+            <li>In-depth analytics and conversion tracking</li>
           </ul>
           <button>Get Started</button>
         </div>
@@ -78,12 +78,12 @@ const Payperclick= () => {
           £ <span>1500/month</span>
           </h1>
           <ul>
-            <li>Bespoke and captivating design with up to 15 pages</li>
-            <li>Advanced front-end features and effects</li>
-            <li>Custom CMS integration and training</li>
-            <li>Optimized for all devices and screen sizes</li>
-            <li>Advanced form functionalities and validation</li>
-            <li>Advanced SEO strategies and site structure</li>
+            <li>Comprehensive ad strategy and testing</li>
+            <li>Extensive keyword research and refinement</li>
+            <li>Compelling ad copy and high-converting designs</li>
+            <li>Customized budget strategy and ROI maximization</li>
+            <li>Custom landing page design and optimization</li>
+            <li>Customized reporting and strategy updates</li>
           </ul>
           <button>Get Started</button>
           <img

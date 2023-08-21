@@ -28,12 +28,12 @@ const Webmaintain = () => {
           £ <span>500/month</span>
           </h1>
           <ul>
-            <li>Unique logo design with 2 revisions</li>
-            <li>Business card design with single revision</li>
-            <li>5 custom social media graphics</li>
-            <li>2 website banners with standard sizes</li>
-            <li></li>
-            <li></li>
+            <li>Basic updates and maintenance tasks</li>
+            <li>Basic performance checks and optimizations</li>
+            <li>Basic support for website issues and inquiries</li>
+            <li>Basic data backups and recovery procedures</li>
+            <li>Basic security scans and vulnerability checks</li>
+            <li>Basic maintenance summary and updates</li>
           </ul>
           <button>Get Started</button>
         </div>
@@ -53,12 +53,12 @@ const Webmaintain = () => {
           £ <span>1000/month</span>
           </h1>
           <ul>
-            <li>Advanced Facebook ad targeting and optimization</li>
-            <li>Engaging ad copy with A/B testing</li>
-            <li>Setup of 4 social media accounts</li>
-            <li>Bi-weekly in-depth performance and ROI analysis</li>
-            <li>10 custom graphics/posts per month</li>
-            <li>Engaging with audience and fostering community</li>
+            <li>Regular content and plugin updates</li>
+            <li>Regular performance analysis and improvements</li>
+            <li>Priority support and faster issue resolution</li>
+            <li>Regular data backups and disaster recovery</li>
+            <li>Regular security audits and patches</li>
+            <li>Detailed maintenance report and recommendations</li>
           </ul>
           <button>Get Started</button>
         </div>
@@ -78,12 +78,12 @@ const Webmaintain = () => {
           £ <span>1500/month</span>
           </h1>
           <ul>
-            <li>Complete brand identity package</li>
-            <li>Comprehensive stationery suite with multiple options</li>
-            <li>20 custom social media graphics</li>
-            <li>10 website banners with various sizes</li>
-            <li>Comprehensive marketing material design</li>
-            <li>Detailed brand guidelines with color and font specifications</li>
+            <li>Proactive maintenance and security checks</li>
+            <li>Comprehensive performance optimization</li>
+            <li>Dedicated technical support and rapid response</li>
+            <li>Customized backup solutions and data protection</li>
+            <li>Advanced security measures and threat detection</li>
+            <li>Customized reporting and proactive suggestions</li>
           </ul>
           <button>Get Started</button>
           <img

@@ -11,7 +11,6 @@ const SocialmediaMarketing = () => {
       <div className="Pricing" id="Pricing" data-aos="fade-up">
       <h1>Social Media Marketing</h1>
       <p>Pricing</p>
-      
       <div className="pricing-container">
         <div className="Pricing-card">
           <div

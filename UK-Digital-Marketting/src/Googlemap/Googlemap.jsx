@@ -7,100 +7,100 @@ import Footer from '../Components/footer/footer';
 const Googlemap = () => {
   return (
     <div>
-      <Navigation/>
+      <Navigation />
       <div className="Pricing" id="Pricing" data-aos="fade-up">
-      <h1>Website Design</h1>
-      <p>our best packages</p>
-      <div className="pricing-container">
-        <div className="Pricing-card">
-          <div
-            style={{
-              backgroundColor: "#c8102e",
-              padding: "1.2rem",
-              color: "#fff",
-              fontSize: "1.2rem",
-              width: "100%",
-            }}
-          >
-            Basic Package
+        <h1>Website Design</h1>
+        <p>our best packages</p>
+        <div className="pricing-container">
+          <div className="Pricing-card">
+            <div
+              style={{
+                backgroundColor: "#c8102e",
+                padding: "1.2rem",
+                color: "#fff",
+                fontSize: "1.2rem",
+                width: "100%",
+              }}
+            >
+              Basic Package
+            </div>
+            <h1>
+              £ <span>500/month</span>
+            </h1>
+            <ul>
+              <li> Verification and basic GMB setup</li>
+              <li>Basic map integration and location marking</li>
+              <li>Basic business description and keywords</li>
+              <li>Basic review monitoring and response</li>
+              <li>Basic local SEO techniques and citations</li>
+              <li>Basic performance summary and insights</li>
+            </ul>
+            <button>Get Started</button>
           </div>
-          <h1>
-          £ <span>500/month</span>
-          </h1>
-          <ul>
-            <li>Responsive design with up to 5 pages</li>
-            <li>HTML/CSS/JavaScript development</li>
-            <li>Basic CMS integration (e.g., WordPress)</li>
-            <li>Basic mobile optimization</li>
-            <li>Basic contact form setup</li>
-            <li>Basic on-page SEO setup</li>
-          </ul>
-          <button>Get Started</button>
-        </div>
-        <div className="Pricing-card">
-          <div
-            style={{
-              backgroundColor: "#c8102e",
-              padding: "1.2rem",
-              color: "#fff",
-              fontSize: "1.2rem",
-              width: "100%",
-            }}
-          >
-           Standard Package
+          <div className="Pricing-card">
+            <div
+              style={{
+                backgroundColor: "#c8102e",
+                padding: "1.2rem",
+                color: "#fff",
+                fontSize: "1.2rem",
+                width: "100%",
+              }}
+            >
+              Standard Package
+            </div>
+            <h1>
+              £ <span>1000/month</span>
+            </h1>
+            <ul>
+              <li>Enhanced GMB setup and optimization</li>
+              <li>Enhanced map integration and markers</li>
+              <li>Comprehensive description and SEO keywords</li>
+              <li>Enhanced review management and reputation</li>
+              <li>Advanced local SEO strategies and listing</li>
+              <li>In-depth analytics and growth analysis</li>
+            </ul>
+            <button>Get Started</button>
           </div>
-          <h1>
-          £ <span>1000/month</span>
-          </h1>
-          <ul>
-            <li>Unique and modern design with up to 10 pages</li>
-            <li>Interactive elements and animations</li>
-            <li>CMS setup and content population</li>
-            <li>Enhanced mobile user experience</li>
-            <li>Customized contact forms and features</li>
-            <li>Comprehensive on-page SEO optimization</li>
-          </ul>
-          <button>Get Started</button>
-        </div>
-        <div className="Pricing-card">
-          <div
-            style={{
-              backgroundColor: "#c8102e",
-              padding: "1.2rem",
-              color: "#fff",
-              fontSize: "1.2rem",
-              width: "100%",
-            }}
-          >
-            Premium Package
+          <div className="Pricing-card">
+            <div
+              style={{
+                backgroundColor: "#c8102e",
+                padding: "1.2rem",
+                color: "#fff",
+                fontSize: "1.2rem",
+                width: "100%",
+              }}
+            >
+              Premium Package
+            </div>
+            <h1>
+              £ <span>1500/month</span>
+            </h1>
+            <ul>
+              <li>Customized GMB optimization and strategy</li>
+              <li>Customized map design and user experience</li>
+              <li>Customized content and keyword strategy</li>
+              <li>Proactive reputation management strategy</li>
+              <li>Comprehensive local SEO and backlinking</li>
+              <li>Customized reporting and strategy updates</li>
+            </ul>
+            <button>Get Started</button>
+            <img
+              className="ribbonimg"
+              src={ribbon}
+              alt=""
+              width={"50px"}
+              srcset=""
+            />
           </div>
-          <h1>
-          £ <span>1500/month</span>
-          </h1>
-          <ul>
-            <li>Bespoke and captivating design with up to 15 pages</li>
-            <li>Advanced front-end features and effects</li>
-            <li>Custom CMS integration and training</li>
-            <li>Optimized for all devices and screen sizes</li>
-            <li>Advanced form functionalities and validation</li>
-            <li>Advanced SEO strategies and site structure</li>
-          </ul>
-          <button>Get Started</button>
-          <img
-            className="ribbonimg"
-            src={ribbon}
-            alt=""
-            width={"50px"}
-            srcset=""
-          />
+
         </div>
-        
       </div>
-    </div>
-      <Login/>
-      <Footer/>
+      <Login />
+      <Footer />
     </div>
   )
 }
 
-export default  Googlemap;
+export default Googlemap;

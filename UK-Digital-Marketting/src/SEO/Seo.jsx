@@ -28,12 +28,12 @@ const Seo = () => {
           £ <span>500/month</span>
           </h1>
           <ul>
-            <li>Responsive design with up to 5 pages</li>
-            <li>HTML/CSS/JavaScript development</li>
-            <li>Basic CMS integration (e.g., WordPress)</li>
-            <li>Basic mobile optimization</li>
-            <li>Basic contact form setup</li>
+            <li>Basic website audit and SEO analysis</li>
+            <li>Basic keyword research and analysis</li>
             <li>Basic on-page SEO setup</li>
+            <li>Basic off-page SEO techniques</li>
+            <li>Basic local SEO techniques and citations</li>
+            <li>Basic performance summary and insights</li>
           </ul>
           <button>Get Started</button>
         </div>
@@ -53,12 +53,12 @@ const Seo = () => {
           £ <span>1000/month</span>
           </h1>
           <ul>
-            <li>Unique and modern design with up to 10 pages</li>
-            <li>Interactive elements and animations</li>
-            <li>CMS setup and content population</li>
-            <li>Enhanced mobile user experience</li>
-            <li>Customized contact forms and features</li>
-            <li>Comprehensive on-page SEO optimization</li>
+            <li>In-depth website analysis and optimization</li>
+            <li>Advanced keyword research and competitor analysis</li>
+            <li>Comprehensive on-page optimization</li>
+            <li>Advanced off-page strategies and link building</li>
+            <li>Enhanced local SEO strategies and listings</li>
+            <li>In-depth analytics and growth analysis</li>
           </ul>
           <button>Get Started</button>
         </div>
@@ -78,12 +78,12 @@ const Seo = () => {
           £ <span>1500/month</span>
           </h1>
           <ul>
-            <li>Bespoke and captivating design with up to 15 pages</li>
-            <li>Advanced front-end features and effects</li>
-            <li>Custom CMS integration and training</li>
-            <li>Optimized for all devices and screen sizes</li>
-            <li>Advanced form functionalities and validation</li>
-            <li>Advanced SEO strategies and site structure</li>
+            <li>Comprehensive website audit and competitor analysis</li>
+            <li>Customized keyword strategy and targeting</li>
+            <li>Advanced on-page SEO strategies</li>
+            <li>Customized off-page SEO and outreach</li>
+            <li>Customized local SEO and NAP consistency</li>
+            <li>Customized reporting and strategy updates</li>
           </ul>
           <button>Get Started</button>
           <img

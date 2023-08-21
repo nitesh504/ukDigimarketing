@@ -28,12 +28,12 @@ const Emailmarketing = () => {
           £ <span>500/month</span>
           </h1>
           <ul>
-            <li>Responsive design with up to 5 pages</li>
-            <li>HTML/CSS/JavaScript development</li>
-            <li>Basic CMS integration (e.g., WordPress)</li>
-            <li>Basic mobile optimization</li>
-            <li>Basic contact form setup</li>
-            <li>Basic on-page SEO setup</li>
+            <li>Basic email template design</li>
+            <li>Basic list management and segmentation</li>
+            <li>Basic campaign setup and manual sending</li>
+            <li>Basic A/B testing of subject lines</li>
+            <li>2 email newsletters per month</li>
+            <li>Basic performance summary and insights</li>
           </ul>
           <button>Get Started</button>
         </div>
@@ -53,12 +53,12 @@ const Emailmarketing = () => {
           £ <span>1000/month</span>
           </h1>
           <ul>
-            <li>Unique and modern design with up to 10 pages</li>
-            <li>Interactive elements and animations</li>
-            <li>CMS setup and content population</li>
-            <li>Enhanced mobile user experience</li>
-            <li>Customized contact forms and features</li>
-            <li>Comprehensive on-page SEO optimization</li>
+            <li>Custom email template design</li>
+            <li>Advanced list management and targeting</li>
+            <li>Automated campaigns and triggered emails</li>
+            <li>Advanced testing and performance analysis</li>
+            <li>4 email newsletters per month</li>
+            <li>In-depth analytics and ROI analysis</li>
           </ul>
           <button>Get Started</button>
         </div>
@@ -78,12 +78,12 @@ const Emailmarketing = () => {
           £ <span>1500/month</span>
           </h1>
           <ul>
-            <li>Bespoke and captivating design with up to 15 pages</li>
-            <li>Advanced front-end features and effects</li>
-            <li>Custom CMS integration and training</li>
-            <li>Optimized for all devices and screen sizes</li>
-            <li>Advanced form functionalities and validation</li>
-            <li>Advanced SEO strategies and site structure</li>
+            <li>Responsive and eye-catching designs</li>
+            <li>Customized subscriber journey and segments</li>
+            <li>Advanced automation and drip campaigns</li>
+            <li>Comprehensive testing and optimization</li>
+            <li>6 email newsletters per month</li>
+            <li>Customized reporting and strategy updates</li>
           </ul>
           <button>Get Started</button>
           <img

@@ -5,7 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import AOS from "aos";
 import "aos/dist/aos.css"
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, MemoryRouter, Route, Routes } from "react-router-dom";
 import SocialmediaMarketing from "./Social Media Marketing/SocialmediaMarketing";
 import Graphicsdesign from "./Graphicsdesign/Graphicsdesign";
 import Facebookboosting from "./Facebookboosting/Facebookboosting";
@@ -30,25 +30,25 @@ AOS.init({
 root.render(
   <React.StrictMode>
     <BrowserRouter >
-    <Routes>
-    <Route path="/" element={<App/>}/>
-    <Route path="/socialmediamarketing" element={<SocialmediaMarketing/>}/>
-    <Route path="/graphicsdesigns" element={<Graphicsdesign/>}/>
-    <Route path="/facebookboosting" element={<Facebookboosting/>}/>
-    <Route path="/websitedesign" element={<Websitedesign/>}/>
-    <Route path="/digitalmarketing" element={<Digitalmarketing/>}/>
-    <Route path="/contentwriting" element={<Contentwriting/>}/>
-    <Route path="/socialmediamanagement" element={<Socialmediamanagement/>}/>
-    <Route path="/Ecommerce" element={<Ecommerce/>}/>
-    <Route path="/videoediting" element={<Videoediting/>}/>
-    <Route path="/mapseo" element={<Googlemap/>}/>
-    <Route path="/seo" element={<Seo/>}/>
-    <Route path="/emailmarketing" element={<Emailmarketing/>}/>
-    <Route path="/payperclick" element={<Payperclick/>}/>
-    <Route path="/socialmediainfluencer" element={<Socialmediainfluencer/>}/>
-    <Route path="/contentmarketing" element={<Contentmarketing/>}/>
-    <Route path="/websitemanagement" element={<Webmaintain/>}/>
-    </Routes>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/socialmediamarketing" element={<SocialmediaMarketing />} />
+        <Route path="/graphicsdesigns" element={<Graphicsdesign />} />
+        <Route path="/facebookboosting" element={<Facebookboosting />} />
+        <Route path="/websitedesign" element={<Websitedesign />} />
+        <Route path="/digitalmarketing" element={<Digitalmarketing />} />
+        <Route path="/contentwriting" element={<Contentwriting />} />
+        <Route path="/socialmediamanagement" element={<Socialmediamanagement />} />
+        <Route path="/Ecommerce" element={<Ecommerce />} />
+        <Route path="/videoediting" element={<Videoediting />} />
+        <Route path="/mapseo" element={<Googlemap />} />
+        <Route path="/seo" element={<Seo />} />
+        <Route path="/emailmarketing" element={<Emailmarketing />} />
+        <Route path="/payperclick" element={<Payperclick />} />
+        <Route path="/socialmediainfluencer" element={<Socialmediainfluencer />} />
+        <Route path="/contentmarketing" element={<Contentmarketing />} />
+        <Route path="/websitemanagement" element={<Webmaintain />} />
+      </Routes>
     </BrowserRouter>
   </React.StrictMode>
 );
