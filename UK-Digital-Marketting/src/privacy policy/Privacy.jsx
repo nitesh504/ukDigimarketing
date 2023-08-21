@@ -16,7 +16,7 @@ const Privacy = () => {
       <Navigation />
       <div className="privacy-main">
         <strong>
-          Privacy Policy Last Updated:
+          Privacy Policy Last Updated:   
           <span style={{ color: "red" }}>{formattedDate}</span>
         </strong>
         <br />
