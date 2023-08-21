@@ -64,7 +64,7 @@ const Navigation = () => {
           </div>
         </li>
         <li>
-          <a href="#contact">Privacy policy</a>
+          <Link to="/privacy">Privacy policy</Link>
         </li>
         <li>
           <a href="#request" className="request-btn">

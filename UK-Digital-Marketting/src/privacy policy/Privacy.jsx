@@ -1,8 +1,13 @@
 import React from 'react'
+import Navigation from '../Components/Navigation/navigation'
+import Footer from '../Components/footer/footer'
 
 const Privacy = () => {
   return (
-    <div>Privacy</div>
+    <div>
+        <Navigation />
+        <Footer />
+    </div>
   )
 }
 

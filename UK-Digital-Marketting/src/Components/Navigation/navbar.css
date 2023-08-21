@@ -6,13 +6,11 @@
 .dropdown-content {
   display: none !important;
   background-color: #f9f9f9;
-  min-width: 300px;
-  width: 700px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 10;
+  width: 1000px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 100;
   position: absolute;
   left: 50%;
-  top: 100%;
 
   transform: translateX(-50%);
 }
@@ -40,7 +38,7 @@
 .dropdown:hover .dropdown-content {
   display: block !important;
   display: grid !important;
-  grid-template-columns: 1fr 1fr !important;
+  grid-template-columns: 1fr 1fr 1fr !important;
 }
 .dropdown-content:hover {
   display: block !important;
