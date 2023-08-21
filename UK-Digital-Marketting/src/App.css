@@ -67,7 +67,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .heroBanner-container h1 {
     font-size: 2rem !important;
   }

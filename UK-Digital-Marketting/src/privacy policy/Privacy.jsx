@@ -16,8 +16,8 @@ const Privacy = () => {
       <Navigation />
       <div className="privacy-main">
         <strong>
-          Privacy Policy Last Updated:   
-          <span style={{ color: "red" }}>{formattedDate}</span>
+          Privacy Policy Last Updated:
+          <span style={{ color: "red" }}> {formattedDate}</span>
         </strong>
         <br />
         <br />
@@ -54,6 +54,7 @@ const Privacy = () => {
         <br />
 
         <h2>Information We Collect</h2>
+        <br />
         <ol>
           <li className="privacy-li">
             <strong>Personal Information:</strong>

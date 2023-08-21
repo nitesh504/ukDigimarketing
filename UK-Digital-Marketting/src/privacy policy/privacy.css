@@ -1,22 +1,32 @@
-.privacy-main{
-    padding: 3rem 7rem;
-
+.privacy-main {
+  padding: 3rem 7rem;
 }
-.privecy-greeting{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.privecy-greeting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.privecy-greeting img{
-    /* width: 100%; */
-    width: 400px;
+.privecy-greeting img {
+  /* width: 100%; */
+  width: 400px;
 }
-.privacy-main p{
-    color: #3C4043;
+.privacy-main p {
+  color: #3c4043;
 }
-.privacy ol{
-    padding-left: 2rem;
+.privacy ol {
+  padding-left: 2rem;
 }
-.privacy-li{
-    list-style-type: disc;
+.privacy-li {
+  list-style-type: disc;
+}
+@media screen and (max-width: 800px) {
+  .privacy-main {
+    padding: 1rem;
+  }
+  .privecy-greeting img {
+    width: 250px;
+  }
+  .privacy-main p {
+    text-align: justify;
+  }
 }
