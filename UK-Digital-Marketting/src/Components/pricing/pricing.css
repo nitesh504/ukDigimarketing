@@ -36,24 +36,15 @@
     }
 }
 .Pricing-card {
-  /* background-color: #b9001f; */
-  /* height: 70vh; */
-  padding: 0 0 1rem;
+  position: relative;
+  padding: 0 0 2.5rem 0;
   box-shadow: 0 0 8px gainsboro;
   border-radius: 1rem;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   position: relative;
-}
-.Pricing-card:hover {
-  box-shadow: 0 0 20px gainsboro;
-}
-.Pricing-card h1 span {
-  font-size: 2rem;
-  color: #b9001f;
 }
 .Pricing button {
   padding: 0.4rem 2rem;
@@ -65,6 +56,15 @@
   cursor: pointer;
   /* margin-top: 1rem; */
   font-size: 0.9rem;
+  position: absolute;
+  bottom: 7px;
+}
+.Pricing-card:hover {
+  box-shadow: 0 0 20px gainsboro;
+}
+.Pricing-card h1 span {
+  font-size: 2rem;
+  color: #b9001f;
 }
 .Pricing-card ul {
     line-height: 2rem;
