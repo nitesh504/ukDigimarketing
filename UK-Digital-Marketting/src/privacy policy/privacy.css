@@ -1,0 +1,22 @@
+.privacy-main{
+    padding: 3rem 7rem;
+
+}
+.privecy-greeting{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.privecy-greeting img{
+    /* width: 100%; */
+    width: 400px;
+}
+.privacy-main p{
+    color: #3C4043;
+}
+.privacy ol{
+    padding-left: 2rem;
+}
+.privacy-li{
+    list-style-type: disc;
+}
