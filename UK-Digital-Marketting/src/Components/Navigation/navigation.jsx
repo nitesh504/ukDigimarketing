@@ -33,11 +33,11 @@ const Navigation = () => {
           <a href="#contact">Contact</a>
         </li>
         <li className="dropdown">
-          <a className="drop-anchor">
+          <div className="drop-anchor">
             Pricing
             <BiDownArrow size={13} />
-          </a>
-          <div className="dropdown-content  ">
+          </div>
+          <div className="dropdown-content ">
             <Link to="/socialmediamarketing">Social Media Marketing</Link>
             <Link to="/graphicsdesigns">Graphics Designs</Link>
             <Link to="/facebookboosting">Facebook Boosting</Link>
@@ -63,9 +63,9 @@ const Navigation = () => {
             <Link to="/websitemanagement">Website Maintenance and Support</Link>
           </div>
         </li>
-        {/* <Link href="#request">
-          <button>Privacy policy</button>
-        </Link> */}
+        <li>
+          <a href="#contact">Privacy policy</a>
+        </li>
         <li>
           <a href="#request" className="request-btn">
             <button>Request a quote </button>
