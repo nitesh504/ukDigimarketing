@@ -57,7 +57,7 @@ const Socialmediamanagement = () => {
             <li>Engaging with followers and fostering community</li>
             <li>Comprehensive analytics and growth analysis</li>
             <li>Social media content strategy development</li>
-            <li>Comprehensive on-page SEO optimization</li>
+            <li>In-depth analysis and actionable recommendations</li>
           </ul>
           <button>Get Started</button>
         </div>

@@ -9,7 +9,7 @@ const Contentmarketing = () => {
     <div>
       <Navigation/>
       <div className="Pricing" id="Pricing" data-aos="fade-up">
-      <h1>Website Design</h1>
+      <h1>Content Marketing</h1>
       <p>our best packages</p>
       <div className="pricing-container">
         <div className="Pricing-card">

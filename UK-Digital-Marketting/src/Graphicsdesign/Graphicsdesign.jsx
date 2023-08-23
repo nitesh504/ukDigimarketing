@@ -32,8 +32,7 @@ const Graphicsdesign = () => {
             <li>Business card design with single revision</li>
             <li>5 custom social media graphics</li>
             <li>2 website banners with standard sizes</li>
-            <li></li>
-            <li></li>
+           
           </ul>
           <button>Get Started</button>
         </div>

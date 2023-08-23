@@ -9,7 +9,7 @@ const Videoediting = () => {
     <div>
       <Navigation/>
       <div className="Pricing" id="Pricing" data-aos="fade-up">
-      <h1>Website Design</h1>
+      <h1>Video Editing</h1>
       <p>our best packages</p>
       <div className="pricing-container">
         <div className="Pricing-card">
@@ -29,7 +29,7 @@ const Videoediting = () => {
           </h1>
           <ul>
              <li>Editing of up to 2 minutes of raw footage</li>
-            <li>HTML/CSS/JavaScript development</li>
+            <li>Standard transitions and basic effects</li>
             <li>Basic audio editing and background music</li>
             <li>Basic color correction and color grading</li>
             <li>Basic text and simple graphics</li>

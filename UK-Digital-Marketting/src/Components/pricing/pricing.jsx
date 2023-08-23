@@ -21,7 +21,7 @@ const Pricing = () => {
             Social Media Marketing
           </div>
           <h1>
-            € <span>500/month</span>
+          £ <span>500/month</span>
           </h1>
           <ul>
             <li>Facebook Boosting</li>
@@ -46,7 +46,7 @@ const Pricing = () => {
             Graphics Design
           </div>
           <h1>
-            € <span>1000/month</span>
+          £ <span>1000/month</span>
           </h1>
           <ul>
             <li>All services from the Starter Package.</li>
@@ -71,7 +71,7 @@ const Pricing = () => {
             Platinum Package
           </div>
           <h1>
-            € <span>1500/month</span>
+          £ <span>1500/month</span>
           </h1>
           <ul>
             <li>All services from the Gold Package.</li>

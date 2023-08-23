@@ -9,7 +9,7 @@ const Webmaintain = () => {
     <div>
       <Navigation/>
       <div className="Pricing" id="Pricing" data-aos="fade-up">
-      <h1>Graphics Design</h1>
+      <h1>Website Maintaince and Support</h1>
       <p>our best packages</p>
       <div className="pricing-container">
         <div className="Pricing-card">

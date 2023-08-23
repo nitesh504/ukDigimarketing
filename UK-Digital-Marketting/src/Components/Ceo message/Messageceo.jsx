@@ -24,11 +24,11 @@ const Messageceo = () => {
                 href="https://www.instagram.com/sailesh_7maharjan/"
               />
             </a>
-            <a href="https://www.linkedin.com/in/saileshmaharjan/">
+            <a href="https://www.linkedin.com/company/digital-pravidhi/">
               <BsLinkedin
                 size={25}
                 className="fa-icon"
-                href="https://www.linkedin.com/in/saileshmaharjan/"
+                href="https://www.linkedin.com/company/digital-pravidhi/"
               />
             </a>
           </span>
