@@ -45,19 +45,15 @@
   align-items: center;
   position: relative;
 }
-.pricingBtn {
-  position: absolute;
-  bottom: 7px;
-}
 .Pricing button {
+  position: absolute;
+  bottom: 1rem;
   padding: 0.4rem 2rem;
-  /* background: transparent; */
   background-color: #c8102e;
   color: #fff;
   border: 2px solid #c8102e;
   border-radius: 7px;
   cursor: pointer;
-  /* margin-top: 1rem; */
   font-size: 0.9rem;
 }
 .Pricing-card:hover {
