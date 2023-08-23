@@ -18,7 +18,7 @@ const Pricing = () => {
               width: "100%",
             }}
           >
-            Social Media Marketing
+            Silver Package
           </div>
           <h1>
             £ <span>500/month</span>
@@ -49,7 +49,7 @@ const Pricing = () => {
               width: "100%",
             }}
           >
-            Graphics Design
+            Platinum Package
           </div>
           <h1>
             £ <span>1000/month</span>
@@ -74,7 +74,7 @@ const Pricing = () => {
               width: "100%",
             }}
           >
-            Platinum Package
+            Diamond Package
           </div>
           <h1>
             £ <span>1500/month</span>
