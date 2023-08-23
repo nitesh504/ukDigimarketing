@@ -30,6 +30,12 @@ const Pricing = () => {
             <li>Monthly Performance Report</li>
             <li>Social Media Content Creation</li>
             <li>Community Engagement</li>
+            <li>Facebook Boosting</li>
+            <li>Ad Copy</li>
+            <li>Social Media Account Setup</li>
+            <li>Monthly Performance Report</li>
+            <li>Social Media Content Creation</li>
+            <li>Community Engagement</li>
           </ul>
           <button>Get Started</button>
         </div>

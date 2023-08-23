@@ -16,7 +16,7 @@
   position: absolute;
 }
 .logo {
-  width: 80%;
+  width: 500px;
   display: flex;
   align-items: center;
   justify-content: space-between;
