@@ -22,7 +22,7 @@ import Payperclick from "./Payperclick/Payperclick";
 import Socialmediainfluencer from "./Socialmediainfluencer/Socialmediainfluencer";
 import Webmaintain from "./Webmaintain/Webmaintain";
 import Contentwriting from "./Contentwriting/Contentwriting";
-import Contact from "./Contact/Contact";
+import Privacy from "./privacy policy/Privacy";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 AOS.init({
@@ -49,7 +49,7 @@ root.render(
         <Route path="/socialmediainfluencer" element={<Socialmediainfluencer />} />
         <Route path="/contentmarketing" element={<Contentmarketing />} />
         <Route path="/websitemanagement" element={<Webmaintain />} />
-         <Route path="/contact" element={<Contact/>}/>
+        <Route path="/privacy" element={<Privacy />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

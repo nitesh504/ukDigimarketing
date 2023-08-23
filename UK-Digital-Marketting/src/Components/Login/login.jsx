@@ -1,24 +1,46 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import seoimg from "../../assets/seo.png";
 import axios from "axios";
 
-const Login = () => {
+const Login = ({ service, packageName }) => {
+  const [packageValue, setPackageValue] = useState(packageName);
   const [data, setData] = useState({
     name: "",
     email: "",
     contact: "",
     company: "",
     website: "",
+    service: service,
+    // package: packageValue,
   });
   function handleSubmit(e) {
-    setData({ ...data, [e.target.name]: e.target.value });
+    if (e.target.name === "package") {
+      setPackageValue(e.target.value);
+      setData({ ...data, [e.target.name]: e.target.value });
+    } else {
+      setData({ ...data, [e.target.name]: e.target.value });
+    }
   }
+  const [arr, setArr] = useState(["basic", "standard", "premium"]);
+  useEffect(() => {
+    if (packageName === "Basic") {
+      setArr(["Basic", "Standard", "Premium"]);
+      setPackageValue("Basic");
+    } else if (packageName === "Standard") {
+      setArr(["Standard", "Basic", "Premium"]);
+      setPackageValue("Standard");
+    } else {
+      setArr(["Premium", "Standard", "Basic"]);
+      setPackageValue("Premium");
+    }
+    setData({ ...data, package: packageName });
+  }, [packageName]);
   async function handleDataSubmit(e) {
     e.preventDefault();
-    console.log(data);
+    await setData({ ...data, package: packageValue });
     try {
       await axios.post(
-        "https://script.google.com/macros/s/AKfycbyXUGLNXVPZIAbRFmpE7N_daeMHWoMrkDKNjsxNYxdmia61EgFlLPU7t0ji6aARtUkd/exec?action=addUser3",
+        "https://script.google.com/macros/s/AKfycbwCUCn43aSpIKwagpnzXndUmXc_xEkw5o9luu74V2oLzeho5LP8dLzgWf6Rg7LPPVAn/exec?action=addUser4",
         data,
         {
           headers: {
@@ -26,6 +48,7 @@ const Login = () => {
           },
         }
       );
+      alert("Your data is recorded successfully");
       window.location.reload();
     } catch (e) {
       console.error("Error occurred while submitting:", e.message);
@@ -35,7 +58,7 @@ const Login = () => {
   return (
     <div className="login-container" id="contact" data-aos="zoom-in-left">
       <div className="form-Left">
-        <img src={seoimg} width="50%" alt="" srcset="" />
+        <img src={seoimg} width="50%" alt="" srcSet="" />
         <h2>marekting for every one</h2>
         <span>
           Worldwide we help businesses gain more leads and brands awareness by
@@ -89,8 +112,17 @@ const Login = () => {
             placeholder="Website*"
             onChange={(e) => handleSubmit(e)}
           />
+          <select name="package" id="package" onChange={(e) => handleSubmit(e)}>
+            {arr.map((item, index) => {
+              return (
+                <option value={item} key={index}>
+                  {item}
+                </option>
+              );
+            })}
+          </select>
           <br />
-          <input type="submit" name="" id="" value="Get Free Report" />
+          <input type="submit" value="Get Free Report" />
         </div>
       </form>
     </div>
