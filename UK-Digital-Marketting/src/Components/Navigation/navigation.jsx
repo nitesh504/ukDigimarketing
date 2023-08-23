@@ -30,7 +30,7 @@ const Navigation = () => {
           <a href="#services">Services</a>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <a href="#contact">Contact</a>
         </li>
         <li className="dropdown">
           <div className="drop-anchor">

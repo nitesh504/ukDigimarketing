@@ -1,10 +1,11 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Navigation from '../Components/Navigation/navigation'
 import Login from '../Components/Login/login'
 import Pricing from '../Components/pricing/pricing'
 import ribbon from "../assets/ribbon.png";
 import Footer from '../Components/footer/footer';
 const Googlemap = () => {
+  const [packageName, setPackageName] = useState("");
   return (
     <div>
       <Navigation />
@@ -35,7 +36,11 @@ const Googlemap = () => {
               <li>Basic local SEO techniques and citations</li>
               <li>Basic performance summary and insights</li>
             </ul>
-            <button>Get Started</button>
+            <a href="#contact" className="pricingBtn">
+              <button onClick={() => setPackageName("Basic")}>
+                Get Started
+              </button>
+            </a>
           </div>
           <div className="Pricing-card">
             <div
@@ -60,7 +65,11 @@ const Googlemap = () => {
               <li>Advanced local SEO strategies and listing</li>
               <li>In-depth analytics and growth analysis</li>
             </ul>
-            <button>Get Started</button>
+            <a href="#contact" className="pricingBtn">
+              <button onClick={() => setPackageName("Standard")}>
+                Get Started
+              </button>
+            </a>
           </div>
           <div className="Pricing-card">
             <div
@@ -85,7 +94,11 @@ const Googlemap = () => {
               <li>Comprehensive local SEO and backlinking</li>
               <li>Customized reporting and strategy updates</li>
             </ul>
-            <button>Get Started</button>
+            <a href="#contact" className="pricingBtn">
+              <button onClick={() => setPackageName("Premium")}>
+                Get Started
+              </button>
+            </a>
             <img
               className="ribbonimg"
               src={ribbon}
@@ -97,7 +110,7 @@ const Googlemap = () => {
 
         </div>
       </div>
-      <Login />
+      <Login service="Google Map" packageName={packageName} />
       <Footer />
     </div>
   )

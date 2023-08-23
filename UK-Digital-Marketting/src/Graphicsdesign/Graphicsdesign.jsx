@@ -1,10 +1,11 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Navigation from '../Components/Navigation/navigation'
 import Login from '../Components/Login/login'
 import Pricing from '../Components/pricing/pricing'
 import ribbon from "../assets/ribbon.png";
 import Footer from '../Components/footer/footer';
 const Graphicsdesign = () => {
+  const [packageName, setPackageName] = useState("");
   return (
     <div>
       <Navigation/>
@@ -34,7 +35,11 @@ const Graphicsdesign = () => {
             <li>2 website banners with standard sizes</li>
            
           </ul>
-          <button>Get Started</button>
+          <a href="#contact" className="pricingBtn">
+              <button onClick={() => setPackageName("Basic")}>
+                Get Started
+              </button>
+            </a>
         </div>
         <div className="Pricing-card">
           <div
@@ -59,7 +64,11 @@ const Graphicsdesign = () => {
             <li>Brochure and flyer design</li>
             <li>Basic style guide with logo usage guidelines</li>
           </ul>
-          <button>Get Started</button>
+          <a href="#contact" className="pricingBtn">
+              <button onClick={() => setPackageName("Standard")}>
+                Get Started
+              </button>
+            </a>
         </div>
         <div className="Pricing-card">
           <div
@@ -84,7 +93,11 @@ const Graphicsdesign = () => {
             <li>Comprehensive marketing material design</li>
             <li>Detailed brand guidelines with color and font specifications</li>
           </ul>
-          <button>Get Started</button>
+          <a href="#contact" className="pricingBtn">
+              <button onClick={() => setPackageName("Premium")}>
+                Get Started
+              </button>
+            </a>
           <img
             className="ribbonimg"
             src={ribbon}
@@ -96,7 +109,7 @@ const Graphicsdesign = () => {
         
       </div>
     </div>
-      <Login/>
+    <Login service="Graphics Design" packageName={packageName} />
       <Footer/>
     </div>
   )

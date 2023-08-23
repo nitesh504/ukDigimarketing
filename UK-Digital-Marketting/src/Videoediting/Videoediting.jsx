@@ -1,10 +1,11 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Navigation from '../Components/Navigation/navigation'
 import Login from '../Components/Login/login'
 import Pricing from '../Components/pricing/pricing'
 import ribbon from "../assets/ribbon.png";
 import Footer from '../Components/footer/footer';
 const Videoediting = () => {
+  const [packageName, setPackageName] = useState("");
   return (
     <div>
       <Navigation/>
@@ -35,7 +36,11 @@ const Videoediting = () => {
             <li>Basic text and simple graphics</li>
             <li>Standard file formats and resolution</li>
           </ul>
-          <button>Get Started</button>
+          <a href="#contact" className="pricingBtn">
+              <button onClick={() => setPackageName("Basic")}>
+                Get Started
+              </button>
+            </a>
         </div>
         <div className="Pricing-card">
           <div
@@ -60,7 +65,11 @@ const Videoediting = () => {
             <li>Enhanced text animations and graphic overlays</li>
             <li>High-quality file formats and delivery</li>
           </ul>
-          <button>Get Started</button>
+          <a href="#contact" className="pricingBtn">
+              <button onClick={() => setPackageName("Standard")}>
+                Get Started
+              </button>
+            </a>
         </div>
         <div className="Pricing-card">
           <div
@@ -85,7 +94,11 @@ const Videoediting = () => {
             <li>Customized motion graphics and animations</li>
             <li>Customized file formats and delivery options</li>
           </ul>
-          <button>Get Started</button>
+          <a href="#contact" className="pricingBtn">
+              <button onClick={() => setPackageName("Premium")}>
+                Get Started
+              </button>
+            </a>
           <img
             className="ribbonimg"
             src={ribbon}
@@ -97,7 +110,7 @@ const Videoediting = () => {
         
       </div>
     </div>
-      <Login/>
+    <Login service="Video editing" packageName={packageName} />
       <Footer/>
     </div>
   )

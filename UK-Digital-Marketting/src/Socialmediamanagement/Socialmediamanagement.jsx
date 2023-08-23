@@ -1,15 +1,16 @@
-import React from 'react'
+import React,{useState}from 'react'
 import Navigation from '../Components/Navigation/navigation'
 import Login from '../Components/Login/login'
 import Pricing from '../Components/pricing/pricing'
 import ribbon from "../assets/ribbon.png";
 import Footer from '../Components/footer/footer';
 const Socialmediamanagement = () => {
+  const [packageName, setPackageName] = useState("");
   return (
     <div>
       <Navigation/>
       <div className="Pricing" id="Pricing" data-aos="fade-up">
-      <h1>Website Design</h1>
+      <h1>Social Media Managemet</h1>
       <p>our best packages</p>
       <div className="pricing-container">
         <div className="Pricing-card">
@@ -34,7 +35,11 @@ const Socialmediamanagement = () => {
             <li>Basic performance tracking and insights</li>
             <li>Basic report on key metrics</li>
           </ul>
-          <button>Get Started</button>
+          <a href="#contact" className="pricingBtn">
+              <button onClick={() => setPackageName("Basic")}>
+                Get Started
+              </button>
+            </a>
         </div>
         <div className="Pricing-card">
           <div
@@ -59,7 +64,11 @@ const Socialmediamanagement = () => {
             <li>Social media content strategy development</li>
             <li>In-depth analysis and actionable recommendations</li>
           </ul>
-          <button>Get Started</button>
+          <a href="#contact" className="pricingBtn">
+              <button onClick={() => setPackageName("Standard")}>
+                Get Started
+              </button>
+            </a>
         </div>
         <div className="Pricing-card">
           <div
@@ -84,7 +93,11 @@ const Socialmediamanagement = () => {
             <li>Comprehensive social media strategy</li>
             <li>Customized reporting and strategy updates</li>
           </ul>
-          <button>Get Started</button>
+          <a href="#contact" className="pricingBtn">
+              <button onClick={() => setPackageName("Premium")}>
+                Get Started
+              </button>
+            </a>
           <img
             className="ribbonimg"
             src={ribbon}
@@ -96,7 +109,7 @@ const Socialmediamanagement = () => {
         
       </div>
     </div>
-      <Login/>
+    <Login service="Social media management" packageName={packageName} />
       <Footer/>
     </div>
   )

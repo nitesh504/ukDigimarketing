@@ -5,7 +5,7 @@ import Footer from '../Components/footer/footer'
 import { BiPhone, } from "react-icons/bi"
 import { BsFillEnvelopeAtFill } from "react-icons/bs"
 import { FiMapPin } from "react-icons/fi"
-import{FaEnvelopeOpenText}from"react-icons/fa"
+import { FaEnvelopeOpenText } from "react-icons/fa"
 const Contact = () => {
     return (
         <>
@@ -16,7 +16,7 @@ const Contact = () => {
                         <FaEnvelopeOpenText
                             size={120}
                             color="#B9001F"
-                            
+
                         ></FaEnvelopeOpenText>
                         <h1 className='one'>
                             Contact Info
@@ -39,7 +39,7 @@ const Contact = () => {
                             <p>Phone Number<br></br>+44 7590612196</p>
                         </div>
                     </div>
-                    <div className='phone'> 
+                    <div className='phone'>
                         <div>
                             <FiMapPin
                                 size={30}
@@ -71,8 +71,8 @@ const Contact = () => {
                 <div className='right'>
                     <form action='' id="cotactform">
                         <div>
-                        <h1 className='head'> Feel Free to contact us</h1>
-                        {/* <p> If you have any queries </p> */}
+                            <h1 className='head'> Feel Free to contact us</h1>
+                            {/* <p> If you have any queries </p> */}
                         </div>
                         <div className='contactFormRow'>
 
