@@ -70,7 +70,7 @@ const Login = ({ service, packageName }) => {
           Worldwide we help businesses gain more leads and brands awareness by
           reassessing and improving their online presence. We provide unique{" "}
           <span>web design</span> combined with and extensive{" "}
-          <span>Search engine ospantimization, online advertising</span> and{" "}
+          <span>Search engine optimization, online advertising</span> and{" "}
           <span>content strategy</span> to ensure business growth.
         </span>
       </div>

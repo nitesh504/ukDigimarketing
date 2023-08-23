@@ -1,15 +1,16 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Navigation from '../Components/Navigation/navigation'
 import Login from '../Components/Login/login'
 import Pricing from '../Components/pricing/pricing'
 import ribbon from "../assets/ribbon.png";
 import Footer from '../Components/footer/footer';
 const Videoediting = () => {
+  const [packageName, setPackageName] = useState("");
   return (
     <div>
       <Navigation/>
       <div className="Pricing" id="Pricing" data-aos="fade-up">
-      <h1>Website Design</h1>
+      <h1>Video Editing</h1>
       <p>our best packages</p>
       <div className="pricing-container">
         <div className="Pricing-card">
@@ -29,13 +30,17 @@ const Videoediting = () => {
           </h1>
           <ul>
              <li>Editing of up to 2 minutes of raw footage</li>
-            <li>HTML/CSS/JavaScript development</li>
+            <li>Standard transitions and basic effects</li>
             <li>Basic audio editing and background music</li>
             <li>Basic color correction and color grading</li>
             <li>Basic text and simple graphics</li>
             <li>Standard file formats and resolution</li>
           </ul>
-          <button>Get Started</button>
+          <a href="#contact" className="pricingBtn">
+              <button onClick={() => setPackageName("Basic")}>
+                Get Started
+              </button>
+            </a>
         </div>
         <div className="Pricing-card">
           <div
@@ -60,7 +65,11 @@ const Videoediting = () => {
             <li>Enhanced text animations and graphic overlays</li>
             <li>High-quality file formats and delivery</li>
           </ul>
-          <button>Get Started</button>
+          <a href="#contact" className="pricingBtn">
+              <button onClick={() => setPackageName("Standard")}>
+                Get Started
+              </button>
+            </a>
         </div>
         <div className="Pricing-card">
           <div
@@ -85,7 +94,11 @@ const Videoediting = () => {
             <li>Customized motion graphics and animations</li>
             <li>Customized file formats and delivery options</li>
           </ul>
-          <button>Get Started</button>
+          <a href="#contact" className="pricingBtn">
+              <button onClick={() => setPackageName("Premium")}>
+                Get Started
+              </button>
+            </a>
           <img
             className="ribbonimg"
             src={ribbon}
@@ -97,7 +110,7 @@ const Videoediting = () => {
         
       </div>
     </div>
-      <Login/>
+    <Login service="Video editing" packageName={packageName} />
       <Footer/>
     </div>
   )

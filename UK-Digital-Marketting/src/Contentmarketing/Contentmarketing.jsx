@@ -1,15 +1,16 @@
-import React from 'react'
+import React ,{useState}from 'react'
 import Navigation from '../Components/Navigation/navigation'
 import Login from '../Components/Login/login'
 import Pricing from '../Components/pricing/pricing'
 import ribbon from "../assets/ribbon.png";
 import Footer from '../Components/footer/footer';
 const Contentmarketing = () => {
+  const [packageName, setPackageName] = useState("");
   return (
     <div>
       <Navigation/>
       <div className="Pricing" id="Pricing" data-aos="fade-up">
-      <h1>Website Design</h1>
+      <h1>Content Marketing</h1>
       <p>our best packages</p>
       <div className="pricing-container">
         <div className="Pricing-card">
@@ -33,7 +34,11 @@ const Contentmarketing = () => {
             <li>Basic on-page SEO for content</li>
             <li>5 social media posts per month</li>
           </ul>
-          <button>Get Started</button>
+          <a href="#contact" className="pricingBtn">
+              <button onClick={() => setPackageName("Basic")}>
+                Get Started
+              </button>
+            </a>
         </div>
         <div className="Pricing-card">
           <div
@@ -58,7 +63,11 @@ const Contentmarketing = () => {
             <li>1 press release per month</li>
             <li>1 infographic and visual content piece</li>
           </ul>
-          <button>Get Started</button>
+          <a href="#contact" className="pricingBtn">
+              <button onClick={() => setPackageName("Standard")}>
+                Get Started
+              </button>
+            </a>
         </div>
         <div className="Pricing-card">
           <div
@@ -83,7 +92,11 @@ const Contentmarketing = () => {
             <li>2 press releases per month</li>
             <li>2 infographics and visual content pieces</li>
           </ul>
-          <button>Get Started</button>
+          <a href="#contact" className="pricingBtn">
+              <button onClick={() => setPackageName("Premium")}>
+                Get Started
+              </button>
+            </a>
           <img
             className="ribbonimg"
             src={ribbon}
@@ -95,7 +108,7 @@ const Contentmarketing = () => {
         
       </div>
     </div>
-      <Login/>
+    <Login service="content marketing" packageName={packageName} />
       <Footer/>
     </div>
   )

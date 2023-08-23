@@ -1,15 +1,16 @@
-import React from 'react'
+import React,{useState}from 'react'
 import Navigation from '../Components/Navigation/navigation'
 import Login from '../Components/Login/login'
 import Pricing from '../Components/pricing/pricing'
 import ribbon from "../assets/ribbon.png";
 import Footer from '../Components/footer/footer';
 const Socialmediainfluencer= () => {
+  const [packageName, setPackageName] = useState("");
   return (
     <div>
       <Navigation/>
       <div className="Pricing" id="Pricing" data-aos="fade-up">
-      <h1>Graphics Design</h1>
+      <h1>Social Media Influncer Marketing</h1>
       <p>our best packages</p>
       <div className="pricing-container">
         <div className="Pricing-card">
@@ -32,10 +33,14 @@ const Socialmediainfluencer= () => {
             <li>Basic outreach and negotiation with influencers</li>
             <li>Coordinating campaigns with influencers</li>
             <li>Co-creating content with influencers</li>
-            <li></li>
-            <li></li>
+            <li>Basic performance metrics and insights</li>
+            <li>Basic influencer campaign summary</li>
           </ul>
-          <button>Get Started</button>
+          <a href="#contact" className="pricingBtn">
+              <button onClick={() => setPackageName("Basic")}>
+                Get Started
+              </button>
+            </a>
         </div>
         <div className="Pricing-card">
           <div
@@ -60,7 +65,11 @@ const Socialmediainfluencer= () => {
             <li>In-depth tracking of influencer campaign ROI</li>
             <li>Detailed influencer performance analysis</li>
           </ul>
-          <button>Get Started</button>
+          <a href="#contact" className="pricingBtn">
+              <button onClick={() => setPackageName("Standard")}>
+                Get Started
+              </button>
+            </a>
         </div>
         <div className="Pricing-card">
           <div
@@ -85,7 +94,11 @@ const Socialmediainfluencer= () => {
             <li>Comprehensive analysis and optimization for results</li>
             <li>Customized reporting and strategy updates</li>
           </ul>
-          <button>Get Started</button>
+          <a href="#contact" className="pricingBtn">
+              <button onClick={() => setPackageName("Premium")}>
+                Get Started
+              </button>
+            </a>
           <img
             className="ribbonimg"
             src={ribbon}
@@ -97,7 +110,7 @@ const Socialmediainfluencer= () => {
         
       </div>
     </div>
-      <Login/>
+    <Login service="Social media influncer" packageName={packageName} />
       <Footer/>
     </div>
   )

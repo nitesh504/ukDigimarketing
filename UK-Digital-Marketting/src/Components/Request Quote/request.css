@@ -16,6 +16,8 @@
     padding: 1rem 7rem;
     font-size: 1.2rem;
     cursor: pointer;
+    background-color: #9e1b32;
+    color: #fff;
 }
 .Request button:hover{
     background-color: #B9001F;

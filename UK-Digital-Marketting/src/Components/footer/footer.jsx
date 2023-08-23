@@ -6,12 +6,13 @@ import facebook from "../../assets/facebook.png";
 import instagram from "../../assets/instagram.png";
 import twitter from "../../assets/twitter.png";
 import logo1 from "../../assets/logo1.png";
+// import { Context as ResponsiveContext } from 'react-responsive'
 
 const Footer = () => {
 
   const facebookUrl = "https://www.facebook.com/sailesh.lion";
   const instagramUrl = "https://www.instagram.com/sailesh_7maharjan/";
-  const twitterUrl = "https://twitter.com/your-page";
+  const twitterUrl = "https://www.linkedin.com/company/digital-pravidhi/";
   
   return (
     <div className="footer">

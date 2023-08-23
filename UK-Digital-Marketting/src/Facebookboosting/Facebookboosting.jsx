@@ -1,10 +1,11 @@
-import React from 'react'
+import React,{useState}from 'react'
 import Navigation from '../Components/Navigation/navigation'
 import Login from '../Components/Login/login'
 import Pricing from '../Components/pricing/pricing'
 import ribbon from "../assets/ribbon.png";
 import Footer from '../Components/footer/footer';
 const Facebookboosting = () => {
+  const [packageName, setPackageName] = useState("");
   return (
     <div>
       <Navigation/>
@@ -34,7 +35,11 @@ const Facebookboosting = () => {
             <li>Basic ad spend management and optimization</li>
             
           </ul>
-          <button>Get Started</button>
+          <a href="#contact" className="pricingBtn">
+              <button onClick={() => setPackageName("Basic")}>
+                Get Started
+              </button>
+            </a>
         </div>
         <div className="Pricing-card">
           <div
@@ -59,7 +64,11 @@ const Facebookboosting = () => {
             <li>Basic landing page review and optimization</li>
             
           </ul>
-          <button>Get Started</button>
+          <a href="#contact" className="pricingBtn">
+              <button onClick={() => setPackageName("Standard")}>
+                Get Started
+              </button>
+            </a>
          
         </div>
         <div className="Pricing-card">
@@ -85,7 +94,11 @@ const Facebookboosting = () => {
             <li>Comprehensive landing page A/B testing and improvements</li>
             <li>Expert consultation and continuous campaign improvement</li>
           </ul>
-          <button>Get Started</button>
+          <a href="#contact" className="pricingBtn">
+              <button onClick={() => setPackageName("Premium")}>
+                Get Started
+              </button>
+            </a>
           <img
             className="ribbonimg"
             src={ribbon}
@@ -98,7 +111,7 @@ const Facebookboosting = () => {
         
       </div>
     </div>
-      <Login/>
+    <Login service="Facebook Bosting " packageName={packageName} />
       <Footer/>
     </div>
   )

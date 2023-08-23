@@ -1,15 +1,16 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Navigation from '../Components/Navigation/navigation'
 import Login from '../Components/Login/login'
 import Pricing from '../Components/pricing/pricing'
 import ribbon from "../assets/ribbon.png";
 import Footer from '../Components/footer/footer';
 const Emailmarketing = () => {
+  const [packageName, setPackageName] = useState("");
   return (
     <div>
       <Navigation/>
       <div className="Pricing" id="Pricing" data-aos="fade-up">
-      <h1>Website Design</h1>
+      <h1>Email Marketing</h1>
       <p>our best packages</p>
       <div className="pricing-container">
         <div className="Pricing-card">
@@ -35,7 +36,11 @@ const Emailmarketing = () => {
             <li>2 email newsletters per month</li>
             <li>Basic performance summary and insights</li>
           </ul>
-          <button>Get Started</button>
+          <a href="#contact" className="pricingBtn">
+              <button onClick={() => setPackageName("Basic")}>
+                Get Started
+              </button>
+            </a>
         </div>
         <div className="Pricing-card">
           <div
@@ -60,7 +65,12 @@ const Emailmarketing = () => {
             <li>4 email newsletters per month</li>
             <li>In-depth analytics and ROI analysis</li>
           </ul>
-          <button>Get Started</button>
+          <a href="#contact" className="pricingBtn">
+              <button onClick={() => setPackageName("Standard")}>
+                Get Started
+              </button>
+            </a>
+         
         </div>
         <div className="Pricing-card">
           <div
@@ -85,7 +95,11 @@ const Emailmarketing = () => {
             <li>6 email newsletters per month</li>
             <li>Customized reporting and strategy updates</li>
           </ul>
-          <button>Get Started</button>
+          <a href="#contact" className="pricingBtn">
+              <button onClick={() => setPackageName("Premium")}>
+                Get Started
+              </button>
+            </a>
           <img
             className="ribbonimg"
             src={ribbon}
@@ -97,7 +111,7 @@ const Emailmarketing = () => {
         
       </div>
     </div>
-      <Login/>
+    <Login service="Email marketing" packageName={packageName} />
       <Footer/>
     </div>
   )

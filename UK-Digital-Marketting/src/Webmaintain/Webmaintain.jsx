@@ -1,15 +1,16 @@
-import React from 'react'
+import React ,{useState}from 'react'
 import Navigation from '../Components/Navigation/navigation'
 import Login from '../Components/Login/login'
 import Pricing from '../Components/pricing/pricing'
 import ribbon from "../assets/ribbon.png";
 import Footer from '../Components/footer/footer';
 const Webmaintain = () => {
+  const [packageName, setPackageName] = useState("");
   return (
     <div>
       <Navigation/>
       <div className="Pricing" id="Pricing" data-aos="fade-up">
-      <h1>Graphics Design</h1>
+      <h1>Website Maintaince and Support</h1>
       <p>our best packages</p>
       <div className="pricing-container">
         <div className="Pricing-card">
@@ -35,7 +36,11 @@ const Webmaintain = () => {
             <li>Basic security scans and vulnerability checks</li>
             <li>Basic maintenance summary and updates</li>
           </ul>
-          <button>Get Started</button>
+          <a href="#contact" className="pricingBtn">
+              <button onClick={() => setPackageName("Basic")}>
+                Get Started
+              </button>
+            </a>
         </div>
         <div className="Pricing-card">
           <div
@@ -60,7 +65,11 @@ const Webmaintain = () => {
             <li>Regular security audits and patches</li>
             <li>Detailed maintenance report and recommendations</li>
           </ul>
-          <button>Get Started</button>
+          <a href="#contact" className="pricingBtn">
+              <button onClick={() => setPackageName("Standard")}>
+                Get Started
+              </button>
+            </a>
         </div>
         <div className="Pricing-card">
           <div
@@ -85,7 +94,11 @@ const Webmaintain = () => {
             <li>Advanced security measures and threat detection</li>
             <li>Customized reporting and proactive suggestions</li>
           </ul>
-          <button>Get Started</button>
+          <a href="#contact" className="pricingBtn">
+              <button onClick={() => setPackageName("Premium")}>
+                Get Started
+              </button>
+            </a>
           <img
             className="ribbonimg"
             src={ribbon}
@@ -97,7 +110,7 @@ const Webmaintain = () => {
         
       </div>
     </div>
-      <Login/>
+    <Login service="Web Maintain" packageName={packageName} />
       <Footer/>
     </div>
   )
