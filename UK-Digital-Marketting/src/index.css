@@ -36,6 +36,22 @@ li {
 a {
   color: black;
 }
-
+.formBtn{
+  background-color: #B9001F;
+  color: aliceblue;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  padding: 12px;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+.formBtn:hover{
+  background-color: brown;
+}
+.formBtn:disabled{
+  cursor: not-allowed;
+  opacity: 0.5;
+}
 /* scroll trigger */
 

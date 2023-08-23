@@ -4,6 +4,7 @@ import axios from "axios";
 
 const Login = ({ service, packageName }) => {
   const [packageValue, setPackageValue] = useState(packageName);
+  const [disable, setDisable] = useState(false);
   const [data, setData] = useState({
     name: "",
     email: "",
@@ -11,7 +12,6 @@ const Login = ({ service, packageName }) => {
     company: "",
     website: "",
     service: service,
-    // package: packageValue,
   });
   function handleSubmit(e) {
     if (e.target.name === "package") {
@@ -37,8 +37,12 @@ const Login = ({ service, packageName }) => {
   }, [packageName]);
   async function handleDataSubmit(e) {
     e.preventDefault();
-    await setData({ ...data, package: packageValue });
+    setData({ ...data, package: packageValue });
+    if(!data.name || !data.company || !data.email){
+      return alert("Please provide value")
+    }
     try {
+      setDisable(true);
       await axios.post(
         "https://script.google.com/macros/s/AKfycbwCUCn43aSpIKwagpnzXndUmXc_xEkw5o9luu74V2oLzeho5LP8dLzgWf6Rg7LPPVAn/exec?action=addUser4",
         data,
@@ -50,7 +54,9 @@ const Login = ({ service, packageName }) => {
       );
       alert("Your data is recorded successfully");
       window.location.reload();
+      setDisable(false);
     } catch (e) {
+      setDisable(false);
       console.error("Error occurred while submitting:", e.message);
       alert("Error occurred while submitting");
     }
@@ -68,7 +74,7 @@ const Login = ({ service, packageName }) => {
           <span>content strategy</span> to ensure business growth.
         </span>
       </div>
-      <form onSubmit={(e) => handleDataSubmit(e)}>
+      <form>
         <div className="formHead">
           <h2>Request a quote</h2>
         </div>
@@ -79,6 +85,7 @@ const Login = ({ service, packageName }) => {
             placeholder="Full Name*"
             id=""
             onChange={(e) => handleSubmit(e)}
+            required
           />
           <br />
           <input
@@ -87,6 +94,7 @@ const Login = ({ service, packageName }) => {
             id=""
             placeholder="Email*"
             onChange={(e) => handleSubmit(e)}
+            required
           />
           <br />
           <input
@@ -95,6 +103,7 @@ const Login = ({ service, packageName }) => {
             id=""
             placeholder="Phone*"
             onChange={(e) => handleSubmit(e)}
+            required
           />
           <br />
           <input
@@ -103,6 +112,7 @@ const Login = ({ service, packageName }) => {
             id=""
             placeholder="Company Name*"
             onChange={(e) => handleSubmit(e)}
+            required
           />
           <br />
           <input
@@ -111,6 +121,7 @@ const Login = ({ service, packageName }) => {
             id=""
             placeholder="Website*"
             onChange={(e) => handleSubmit(e)}
+            required
           />
           <select name="package" id="package" onChange={(e) => handleSubmit(e)}>
             {arr.map((item, index) => {
@@ -122,7 +133,14 @@ const Login = ({ service, packageName }) => {
             })}
           </select>
           <br />
-          <input type="submit" value="Get Free Report" />
+          <button
+            onClick={(e) => handleDataSubmit(e)}
+            className="formBtn"
+            disabled={disable ? true : false}
+          >
+            Get Free Report
+          </button>
+          {/* <input type="submit" value="Get Free Report" /> */}
         </div>
       </form>
     </div>
