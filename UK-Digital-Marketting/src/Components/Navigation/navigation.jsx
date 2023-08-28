@@ -9,7 +9,7 @@ const Navigation = () => {
   return (
     <nav className="topnav" id="myTopnav">
       <div className="logo">
-        <img width={150} src={logo} alt="Digital Marketing" />
+       <img width={150} src={logo} alt="Digital Marketing" />
         <li className="icon">
           {
             <GiHamburgerMenu
