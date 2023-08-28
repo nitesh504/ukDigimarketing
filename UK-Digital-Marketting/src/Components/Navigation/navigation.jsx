@@ -9,7 +9,7 @@ const Navigation = () => {
   return (
     <nav className="topnav" id="myTopnav">
       <div className="logo">
-        <img width={150} src={logo} alt="Digital Marketing" />
+        <img width={150} src={logo} alt="Digital Marketing" onClick={()=>window.location.href="/"}/>
         <li className="icon">
           {
             <GiHamburgerMenu
@@ -26,12 +26,7 @@ const Navigation = () => {
             Home
           </a>
         </li>
-        <li>
-          <a href="#services">Services</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
+
         <li className="dropdown">
           <div className="drop-anchor">
             Pricing
@@ -65,6 +60,9 @@ const Navigation = () => {
         </li>
         <li>
           <Link to="/privacy">Privacy policy</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
         </li>
         <li>
           <a href="#request" className="request-btn">
