@@ -203,3 +203,7 @@
     padding: 10px;
   }
 }
+.whole input, .whole textarea{
+    border-radius: 4px;
+    border: 2px solid #777;
+}

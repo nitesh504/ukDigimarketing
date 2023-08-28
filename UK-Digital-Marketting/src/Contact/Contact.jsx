@@ -6,7 +6,27 @@ import { BiPhone } from "react-icons/bi";
 import { BsFillEnvelopeAtFill } from "react-icons/bs";
 import { FiMapPin } from "react-icons/fi";
 import { FaEnvelopeOpenText } from "react-icons/fa";
+import emailjs from 'emailjs-com';
+
 const Contact = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const serviceId = "YOUR_EMAILJS_SERVICE_ID";
+    const templateId = "YOUR_EMAILJS_TEMPLATE_ID";
+    const userId = "YOUR_EMAILJS_USER_ID";
+
+    emailjs.sendForm(serviceId, templateId, e.target, userId).then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+
+    e.target.reset();
+  };
   return (
     <>
       <Navigation />
@@ -60,10 +80,9 @@ const Contact = () => {
           </div>
         </div>
         <div className="right">
-          <form action="" id="cotactform">
+          <form onSubmit={handleSubmit} id="cotactform">
             <div>
               <h1 className="head"> Feel Free to contact us</h1>
-              {/* <p> If you have any queries </p> */}
             </div>
             <div className="contactFormRow">
               <input
@@ -111,7 +130,7 @@ const Contact = () => {
               <textarea id="text" placeholder="Message"></textarea>
             </div>
             <div className="contactFormRow">
-              <button id="form"> Submit </button>
+              <button typeof="submit" className="formBtn"> Submit </button>
             </div>
           </form>
         </div>

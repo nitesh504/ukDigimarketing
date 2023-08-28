@@ -37,7 +37,7 @@ const Pricing = () => {
             <li>Social Media Content Creation</li>
             <li>Community Engagement</li>
           </ul>
-          <button>Get Started</button>
+          
         </div>
         <div className="Pricing-card">
           <div
@@ -62,7 +62,7 @@ const Pricing = () => {
             <li>Influencer Outreach</li>
             <li>Expanded Social Media Analytics</li>
           </ul>
-          <button>Get Started</button>
+         
         </div>
         <div className="Pricing-card">
           <div
@@ -87,7 +87,7 @@ const Pricing = () => {
             <li>Social Media Influencer Marketing</li>
             <li>Customized Social Media Reports</li>
           </ul>
-          <button>Get Started</button>
+         
           <img
             className="ribbonimg"
             src={ribbon}
