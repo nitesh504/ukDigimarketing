@@ -6,14 +6,14 @@ import facebook from "../../assets/facebook.png";
 import instagram from "../../assets/instagram.png";
 import twitter from "../../assets/twitter.png";
 import logo1 from "../../assets/logo1.png";
+import { Link } from "react-router-dom";
 // import { Context as ResponsiveContext } from 'react-responsive'
 
 const Footer = () => {
-
   const facebookUrl = "https://www.facebook.com/sailesh.lion";
   const instagramUrl = "https://www.instagram.com/sailesh_7maharjan/";
   const twitterUrl = "https://www.linkedin.com/company/digital-pravidhi/";
-  
+
   return (
     <div className="footer">
       <div className="footer-main">
@@ -22,22 +22,60 @@ const Footer = () => {
           <div>
             <ul>
               <li>
-                <p>Search Engine Marketing</p>
+                <Link to="/socialmediamarketing">Social Media Marketing</Link>
               </li>
               <li>
-                <p>Data Science & Analytics</p>
+                <Link to="/websitedesign">Website Design</Link>
               </li>
               <li>
-                <p>Mobile Marketing</p>
+                <Link to="/socialmediamanagement">Social Media Management</Link>
               </li>
               <li>
-                <p>Content Marketing</p>
+                <Link to="/payperclick">Pay-Per-Click (PPC) Advertising</Link>
               </li>
               <li>
-                <p>Engagement Marketing</p>
+                <Link to="/websitemanagement">
+                  Website Maintenance and Support
+                </Link>
               </li>
               <li>
-                <p>Social Media Marketing</p>
+                <Link to="/graphicsdesigns">Graphics Designs</Link>
+              </li>
+              <li>
+                <Link to="/digitalmarketing">Digital Marketing</Link>
+              </li>
+              <li>
+                <Link to="/seo">Search Engine Optimization</Link>
+              </li>
+              <li>
+                <Link to="/socialmediainfluencer">
+                  Social Media Influencer Marketing
+                </Link>
+              </li>
+              <li>
+                <Link to="/facebookboosting">Facebook Boosting</Link>
+              </li>
+              <li>
+                <Link to="/contentwriting">Content Writing</Link>
+              </li>
+              <li>
+                <Link to="/videoediting">Video Editing</Link>
+              </li>
+              <li>
+                <Link to="/emailmarketing">Email Marketing</Link>
+              </li>
+              <li>
+                <Link to="/contentmarketing">Content Marketing</Link>
+              </li>
+              <li>
+                <Link to="/Ecommerce">
+                  Ecommerce Management (Amazon, Shopify, etc)
+                </Link>
+              </li>
+              <li>
+                <Link to="/mapseo">
+                  Google My Business Creation and Management with SEO
+                </Link>
               </li>
             </ul>
           </div>
@@ -65,24 +103,23 @@ const Footer = () => {
             </span>
           </div>
         </div>
-        <div>
+        <div className="footer-social-layer">
           <h2>Touch</h2>
           <div className="footer-social">
-  <a href={facebookUrl} target="_blank" rel="noopener noreferrer">
-    <img src={facebook} alt="" />
-  </a>
-  <a href={instagramUrl} target="_blank" rel="noopener noreferrer">
-    <img src={instagram} alt="" />
-  </a>
-  <a href={twitterUrl} target="_blank" rel="noopener noreferrer">
-    <img src={twitter} alt="" />
-  </a>
-</div>
-
+            <a href={facebookUrl} target="_blank" rel="noopener noreferrer">
+              <img src={facebook} alt="" />
+            </a>
+            <a href={instagramUrl} target="_blank" rel="noopener noreferrer">
+              <img src={instagram} alt="" />
+            </a>
+            <a href={twitterUrl} target="_blank" rel="noopener noreferrer">
+              <img src={twitter} alt="" />
+            </a>
+          </div>
         </div>
       </div>
-      <img  width={180} src={logo1} alt="" srcset="" />
-      
+      <img width={180} src={logo1} alt="" srcset="" />
+
       <div style={{ marginTop: "1rem" }}>
         <hr />
         <center style={{ padding: "1rem" }}>

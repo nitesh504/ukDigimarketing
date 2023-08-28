@@ -1,90 +1,87 @@
 .whole {
-    display: flex;
-    gap: 200px;
-    padding: 20px;
-    padding-left: 60px;
-
+  display: flex;
+  gap: 200px;
+  padding: 20px;
+  padding-left: 60px;
 }
 
 .left {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    width: auto;
-    height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: auto;
+  height: auto;
 }
 
 .phone {
-    display: flex;
-    gap: 7px;
+  display: flex;
+  gap: 7px;
 }
 
 .contacticon {
-    background-color: #C8102E;
-    color: white !important;
-    padding: 5px;
-    border-radius: 50%;
+  background-color: #c8102e;
+  color: white !important;
+  padding: 5px;
+  border-radius: 50%;
 }
 
 .right {
-    display: flex;
-    gap: 20px;
-    background-color: whitesmoke;
-    padding: 20px;
-    box-shadow: 0 0 10px lightgray;
-
+  display: flex;
+  gap: 20px;
+  background-color: whitesmoke;
+  padding: 20px;
+  box-shadow: 0 0 10px lightgray;
 }
 
 #cotactform {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .contactFormRow {
-    display: flex;
-    gap: 40px;
-    border-radius: 20px;
-
+  display: flex;
+  gap: 40px;
+  border-radius: 20px;
 }
 
 #name {
-    width: 300px;
-    height: 40px;
-    padding: 10px;
+  width: 300px;
+  height: 40px;
+  padding: 10px;
 }
 
 #text {
-    height: 140px;
-    width: 640px;
-    padding: 10px;
+  height: 140px;
+  width: 640px;
+  padding: 10px;
 }
 
 #form {
-    border-radius: 11px;
-    width: 100px;
-    height: 30px;
-    background-color: #C8102E;
-    color: white;
+  border-radius: 11px;
+  width: 100px;
+  height: 30px;
+  background-color: #c8102e;
+  color: white;
 }
 
 #form:hover {
-    background-color: red;
-    color: white;
+  background-color: red;
+  color: white;
 }
 
 .head {
-    font-weight: 300;
-    background-color: #C8102E;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    padding: 20px;
-    color: white;
+  font-weight: 300;
+  background-color: #c8102e;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  color: white;
 }
 
 .one {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 /* .contact{
@@ -93,121 +90,116 @@
     box-shadow: 10px 10px 10px lightgrey;
 } */
 @media screen and (max-width: 480px) {
-    input{
-        display: block;
-    }
-    .whole {
-        display: flex;
-        flex-direction: column;
-        gap: 100px;
-        padding: 20px;
-        /* padding-left: 60px; */
-        align-items: center;
-    
-    }
-    
+  input {
+    display: block;
+  }
+  .left{
+    width: 90%
+  }
+  .whole {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 20px;
+    /* padding-left: 60px; */
+    align-items: center;
+  }
 
-    .right {
-        display: flex;
-        gap: 10px;
-        background-color: whitesmoke;
-        /* padding: 20px; */
-        box-shadow: 0 0 10px lightgray;
+  .right {
+    display: flex;
+    gap: 10px;
+    background-color: whitesmoke;
+    /* padding: 20px; */
+    box-shadow: 0 0 10px lightgray;
+  }
 
-    }
+  #cotactform {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 
-    #cotactform {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
+  .contactFormRow {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+  }
 
-    .contactFormRow {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        border-radius: 10px;
-    }
+  #name {
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+  }
 
-    #name {
-        width: 300px;
-        height: 30px;
-        padding: 10px;
-    }
-
-    .head {
-        font-weight: 300;
-        background-color: #C8102E;
-        display: flex;
-        text-align: center;
-        align-items: center;
-        padding: 20px;
-        color: white;
-        width: 300px;
-    }
-    #text {
-        height: 120px;
-        width: 300px;
-        padding: 10px;
-    }
-    
+  .head {
+    font-weight: 300;
+    background-color: #c8102e;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    width: 300px;
+  }
+  #text {
+    height: 120px;
+    width: 300px;
+    padding: 10px;
+  }
 }
-@media screen and (min-width:481px) and (max-width: 768px) {
-    input{
-        display: block;
-    }
-    .whole {
-        display: flex;
-        gap: 150px;
-        padding: 20px;
-        padding-left: 60px;
-        align-items: center;
-    
-    }
-    
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  input {
+    display: block;
+  }
+  .whole {
+    display: flex;
+    gap: 150px;
+    padding: 20px;
+    padding-left: 60px;
+    align-items: center;
+  }
 
-    .right {
-        display: flex;
-        gap: 10px;
-        background-color: whitesmoke;
-        padding: 20px;
-        box-shadow: 0 0 10px lightgray;
+  .right {
+    display: flex;
+    gap: 10px;
+    background-color: whitesmoke;
+    padding: 20px;
+    box-shadow: 0 0 10px lightgray;
+  }
 
-    }
+  #cotactform {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 
-    #cotactform {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
+  .contactFormRow {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+  }
 
-    .contactFormRow {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        border-radius: 10px;
-    }
+  #name {
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+  }
 
-    #name {
-        width: 300px;
-        height: 30px;
-        padding: 10px;
-    }
-
-    .head {
-        font-weight: 300;
-        background-color: #C8102E;
-        display: flex;
-        text-align: center;
-        align-items: center;
-        padding: 20px;
-        color: white;
-        width: 300px;
-    }
-    #text {
-        height: 120px;
-        width: 300px;
-        padding: 10px;
-    }
-    
+  .head {
+    font-weight: 300;
+    background-color: #c8102e;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    width: 300px;
+  }
+  #text {
+    height: 120px;
+    width: 300px;
+    padding: 10px;
+  }
 }

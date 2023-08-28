@@ -9,7 +9,12 @@ const Navigation = () => {
   return (
     <nav className="topnav" id="myTopnav">
       <div className="logo">
-        <img width={150} src={logo} alt="Digital Marketing" onClick={()=>window.location.href="/"}/>
+        <img
+          width={150}
+          src={logo}
+          alt="Digital Marketing"
+          onClick={() => (window.location.href = "/")}
+        />
         <li className="icon">
           {
             <GiHamburgerMenu
