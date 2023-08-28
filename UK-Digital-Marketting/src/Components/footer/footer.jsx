@@ -2,17 +2,19 @@ import React from "react";
 import locationimg from "../../assets/location.png";
 import mailimg from "../../assets/mail.png";
 import phoneimg from "../../assets/telephone.png";
-import facebook from "../../assets/facebook.png";
-import instagram from "../../assets/instagram.png";
-import twitter from "../../assets/twitter.png";
+// import facebook from "../../assets/facebook.png";
+// import instagram from "../../assets/instagram.png";
+// import twitter from "../../assets/twitter.png";
+import { AiFillFacebook } from "react-icons/ai";
 import logo1 from "../../assets/logo1.png";
 import { Link } from "react-router-dom";
+import { BsFacebook, BsLinkedin } from "react-icons/bs";
 // import { Context as ResponsiveContext } from 'react-responsive'
 
 const Footer = () => {
   const facebookUrl = "https://www.facebook.com/sailesh.lion";
-  const instagramUrl = "https://www.linkedin.com/in/digimarketinguk-limited-4b2b67288/";
-  
+  const instagramUrl =
+    "https://www.linkedin.com/in/digimarketinguk-limited-4b2b67288/";
 
   return (
     <div className="footer">
@@ -106,13 +108,12 @@ const Footer = () => {
         <div className="footer-social-layer">
           <h2>Touch</h2>
           <div className="footer-social">
-            <a href={facebookUrl} target="_blank" rel="noopener noreferrer">
-              <img src={facebook} alt="" />
+            <a href="https://www.facebook.com/digimarketinguk">
+              <BsFacebook color="#FF991F" size={25} />
             </a>
-            <a href={instagramUrl} target="_blank" rel="noopener noreferrer">
-              <img src={instagram} alt="" />
+            <a href="https://www.linkedin.com/in/digimarketinguk-limited-4b2b67288/">
+              <BsLinkedin color="#FF991F" size={25} />
             </a>
-         
           </div>
         </div>
       </div>
