@@ -11,8 +11,8 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   const facebookUrl = "https://www.facebook.com/sailesh.lion";
-  const instagramUrl = "https://www.instagram.com/sailesh_7maharjan/";
-  const twitterUrl = "https://www.linkedin.com/company/digital-pravidhi/";
+  const instagramUrl = "https://www.linkedin.com/in/digimarketinguk-limited-4b2b67288/";
+  
 
   return (
     <div className="footer">
@@ -94,7 +94,7 @@ const Footer = () => {
             <br />
             <span>
               <img src={mailimg} alt="" srcset="" />
-              hr@uksmm.com
+              hr@digimarketinguk.com
             </span>
             <br />
             <span>
@@ -112,9 +112,7 @@ const Footer = () => {
             <a href={instagramUrl} target="_blank" rel="noopener noreferrer">
               <img src={instagram} alt="" />
             </a>
-            <a href={twitterUrl} target="_blank" rel="noopener noreferrer">
-              <img src={twitter} alt="" />
-            </a>
+         
           </div>
         </div>
       </div>
