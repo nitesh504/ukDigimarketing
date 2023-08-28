@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.css";
 import Navigation from "../Components/Navigation/navigation";
 import Footer from "../Components/footer/footer";
@@ -6,27 +6,67 @@ import { BiPhone } from "react-icons/bi";
 import { BsFillEnvelopeAtFill } from "react-icons/bs";
 import { FiMapPin } from "react-icons/fi";
 import { FaEnvelopeOpenText } from "react-icons/fa";
-import emailjs from 'emailjs-com';
+import emailjs from "emailjs-com";
+import axios from "axios";
 
 const Contact = () => {
-  const handleSubmit = (e) => {
+  const [disable, setDisable] = useState(false);
+  const [data, setData] = useState({
+    name: "",
+    nationality: "",
+    email: "",
+    company: "",
+    contact: "",
+    address: "",
+    message: "",
+  });
+  function handleSubmit(e) {
+    setData({ ...data, [e.target.name]: e.target.value });
+  }
+  //   const handleSubmit = (e) => {
+  //     e.preventDefault();
+
+  //     const serviceId = "YOUR_EMAILJS_SERVICE_ID";
+  //     const templateId = "YOUR_EMAILJS_TEMPLATE_ID";
+  //     const userId = "YOUR_EMAILJS_USER_ID";
+
+  //     emailjs.sendForm(serviceId, templateId, e.target, userId).then(
+  //       (result) => {
+  //         console.log(result.text);
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //       }
+  //     );
+
+  //     e.target.reset();
+  //   };
+
+  async function handleDataSubmit(e) {
     e.preventDefault();
-
-    const serviceId = "YOUR_EMAILJS_SERVICE_ID";
-    const templateId = "YOUR_EMAILJS_TEMPLATE_ID";
-    const userId = "YOUR_EMAILJS_USER_ID";
-
-    emailjs.sendForm(serviceId, templateId, e.target, userId).then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
-
-    e.target.reset();
-  };
+    if (!data.name || !data.company || !data.email) {
+      return alert("Please provide value");
+    }
+    try {
+      setDisable(true);
+      await axios.post(
+        "https://script.google.com/macros/s/AKfycbxdMNnBcHnK1AxNYuZ60r11yz3DOTNRGgQZb73aFU5cuhQEvUWGmluSBhcP2vc71pK3/exec?action=addUser5",
+        data,
+        {
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+        }
+      );
+      alert("Your data is recorded successfully");
+      window.location.reload();
+      setDisable(false);
+    } catch (e) {
+      setDisable(false);
+      console.error("Error occurred while submitting:", e.message);
+      alert("Error occurred while submitting");
+    }
+  }
   return (
     <>
       <Navigation />
@@ -80,22 +120,24 @@ const Contact = () => {
           </div>
         </div>
         <div className="right">
-          <form onSubmit={handleSubmit} id="cotactform">
+          <form id="cotactform">
             <div>
               <h1 className="head"> Feel Free to contact us</h1>
             </div>
             <div className="contactFormRow">
               <input
                 type="text"
-                name="fname"
+                name="name"
                 id="name"
                 placeholder="Name eg.(Niall)"
+                onChange={(e) => handleSubmit(e)}
               ></input>
               <input
                 type="text"
-                name="fname"
+                name="nationality"
                 id="name"
-                placeholder="Surename eg.(Horan)"
+                placeholder="Nationality eg.(UK)"
+                onChange={(e) => handleSubmit(e)}
               ></input>
             </div>
             <div className="contactFormRow">
@@ -104,33 +146,49 @@ const Contact = () => {
                 name="email"
                 id="name"
                 placeholder="Email eg.(abc@gmail.com)"
+                onChange={(e) => handleSubmit(e)}
               ></input>
               <input
                 type="text"
-                name="cname"
+                name="company"
                 id="name"
                 placeholder="Company Name eg.(meta)"
+                onChange={(e) => handleSubmit(e)}
               ></input>
             </div>
             <div className="contactFormRow">
               <input
                 type="number"
-                name="pnumber"
+                name="contact"
                 id="name"
                 placeholder="Contact eg.(+44-7659834067)"
+                onChange={(e) => handleSubmit(e)}
               ></input>
               <input
                 type="text"
-                name="pass"
+                name="address"
                 id="name"
                 placeholder="Address eg.(London)"
+                onChange={(e) => handleSubmit(e)}
               ></input>
             </div>
             <div className="contactFormRow">
-              <textarea id="text" placeholder="Message"></textarea>
+              <textarea
+                id="text"
+                name="message"
+                placeholder="Message"
+                onChange={(e) => handleSubmit(e)}
+              ></textarea>
             </div>
             <div className="contactFormRow">
-              <button typeof="submit" className="formBtn"> Submit </button>
+              <button
+                typeof="submit"
+                onClick={handleDataSubmit}
+                className="formBtn"
+                disabled={disable ? true : false}
+              >
+                Submit{" "}
+              </button>
             </div>
           </form>
         </div>
