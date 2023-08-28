@@ -14,6 +14,7 @@
   height: 2.7rem !important;
   overflow: hidden;
   position: absolute;
+  z-index: 10000;
 }
 .logo {
   width: 40%;
@@ -524,6 +525,16 @@
   .footer .logo img {
     width: 100px;
     padding: 7px !important;
+  }
+  .footer-social-layer {
+    margin-top: 1rem;
+    text-align: left !important;
+  }
+  .footer-social{
+    text-align: left !important;
+    width: 100% !important;
+    justify-content: flex-start !important;
+    gap: 7px;
   }
 }
 
