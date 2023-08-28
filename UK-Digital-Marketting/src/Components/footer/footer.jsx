@@ -12,9 +12,7 @@ import { BsFacebook, BsLinkedin } from "react-icons/bs";
 // import { Context as ResponsiveContext } from 'react-responsive'
 
 const Footer = () => {
-  const facebookUrl = "https://www.facebook.com/sailesh.lion";
-  const instagramUrl =
-    "https://www.linkedin.com/company/digimarketinguk-limited/about/";
+ 
 
   return (
     <div className="footer">
