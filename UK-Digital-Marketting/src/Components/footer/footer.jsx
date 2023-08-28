@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   const facebookUrl = "https://www.facebook.com/sailesh.lion";
-  const instagramUrl = "https://www.linkedin.com/in/digimarketinguk-limited-4b2b67288/";
+  const instagramUrl = "https://www.linkedin.com/company/digimarketinguk-limited/about/"
   
 
   return (
